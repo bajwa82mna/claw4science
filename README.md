@@ -45,8 +45,6 @@ A curated discovery platform for OpenClaw AI agent projects — spanning bioinfo
 5. **Wait ~5 minutes** — your site is live!
 
 
-GitHub Pages will automatically provision an SSL certificate via Let's Encrypt.
-
 ## ➕ Adding a New Project
 
 Open `js/projects.js` and add an entry to the `PROJECTS` array:
