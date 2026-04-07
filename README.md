@@ -44,16 +44,6 @@ A curated discovery platform for OpenClaw AI agent projects — spanning bioinfo
 4. **DNS:** Add a CNAME record for `claw4science.campusinchina.com` → `username.github.io`
 5. **Wait ~5 minutes** — your site is live!
 
-### DNS Configuration
-
-In your DNS provider (for `campusinchina.com`):
-
-```
-Type:  CNAME
-Name:  claw4science
-Value: YOUR-GITHUB-USERNAME.github.io
-TTL:   3600
-```
 
 GitHub Pages will automatically provision an SSL certificate via Let's Encrypt.
 
