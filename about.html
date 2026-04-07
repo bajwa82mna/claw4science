@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About Claw4Science — Our mission, who we are, and how we curate the OpenClaw ecosystem for scientific researchers." />
+  <title>About — Claw4Science</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦀</text></svg>" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .about-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px 24px;
+      transition: all var(--transition);
+    }
+    .about-card:hover {
+      border-color: var(--border-hover);
+    }
+    .principle-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+    .principle-icon {
+      font-size: 1.8rem;
+      margin-bottom: 12px;
+    }
+    .principle-title {
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 8px;
+    }
+    .principle-desc {
+      color: var(--text-secondary);
+      font-size: 0.875rem;
+      line-height: 1.65;
+    }
+    .timeline {
+      position: relative;
+      padding-left: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      margin-top: 24px;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 7px;
+      top: 8px;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--teal), transparent);
+    }
+    .timeline-item {
+      position: relative;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -20px;
+      top: 6px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--teal);
+      box-shadow: 0 0 8px var(--teal-glow);
+    }
+    .timeline-date {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--teal);
+      margin-bottom: 4px;
+    }
+    .timeline-title {
+      font-family: var(--font-head);
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-bottom: 4px;
+    }
+    .timeline-desc {
+      color: var(--text-secondary);
+      font-size: 0.875rem;
+      line-height: 1.65;
+    }
+    .contact-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-hover);
+      border-radius: var(--radius-xl);
+      padding: 40px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">
+      <div class="logo-icon">🦀</div>
+      <span>Claw4<span class="accent">Science</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="skill-hubs.html">Skill Hubs</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="btn btn-outline btn-sm" href="https://github.com/bajwa82mna/claw4science-submissions/new/choose" target="_blank" rel="noopener noreferrer">Submit Project</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="nav-mobile">
+  <a href="index.html#projects">Projects</a>
+  <a href="skill-hubs.html">Skill Hubs</a>
+  <a href="blog.html">Blog</a>
+  <a href="about.html" class="active">About</a>
+</div>
+
+<div class="page-hero">
+  <div class="section-label">Our Mission</div>
+  <h1 class="page-hero-title">About Claw4Science</h1>
+  <p class="page-hero-desc">Connecting the scientific research community with the most powerful AI agent tools in the OpenClaw ecosystem.</p>
+</div>
+
+<main style="position: relative; z-index: 1;">
+  <div class="container" style="max-width: 900px; padding-bottom: 80px;">
+
+    <!-- Mission -->
+    <section class="about-prose" style="max-width:100%;">
+      <h2>Our Mission</h2>
+      <p>
+        Claw4Science exists because the OpenClaw AI agent ecosystem is growing rapidly — too rapidly for most researchers to track. New projects launch weekly, existing ones evolve significantly, and distinguishing genuinely useful scientific tools from hobbyist experiments is time-consuming work. We do that work so you don't have to.
+      </p>
+      <p>
+        We curate, test, and classify OpenClaw ecosystem projects with a specific focus on scientific research use cases: bioinformatics, biomedicine, drug discovery, autonomous literature review, and AI-assisted experimentation. Our editorial standards prioritize open-source projects with active maintenance, reproducible workflows, and genuine utility for working researchers.
+      </p>
+    </section>
+
+    <!-- Principles -->
+    <section style="margin: 48px 0;">
+      <div class="section-label" style="margin-bottom: 8px;">Principles</div>
+      <h2 style="font-family: var(--font-head); font-size: 1.5rem; font-weight: 700; margin-bottom: 4px;">How We Curate</h2>
+      <div class="principle-grid">
+        <div class="about-card">
+          <div class="principle-icon">🔍</div>
+          <div class="principle-title">Research-First Filtering</div>
+          <div class="principle-desc">We only list projects with clear scientific utility — not every OpenClaw fork makes the cut. Projects must demonstrate real value for researchers.</div>
+        </div>
+        <div class="about-card">
+          <div class="principle-icon">✅</div>
+          <div class="principle-title">Verified Open Source</div>
+          <div class="principle-desc">Every project is confirmed open source with an accessible GitHub repository. We link directly to source code, not landing pages.</div>
+        </div>
+        <div class="about-card">
+          <div class="principle-icon">⚡</div>
+          <div class="principle-title">Active Maintenance</div>
+          <div class="principle-desc">We track maintenance status (Active/Stale/Dormant) so researchers know what's still being developed versus abandoned projects.</div>
+        </div>
+        <div class="about-card">
+          <div class="principle-icon">🎯</div>
+          <div class="principle-title">Honest Assessment</div>
+          <div class="principle-desc">Where projects share names or overlapping scope, we add context. We flag misleading claims and note when "Misleading" status applies.</div>
+        </div>
+        <div class="about-card">
+          <div class="principle-icon">🌏</div>
+          <div class="principle-title">Global Coverage</div>
+          <div class="principle-desc">We actively track projects from academic groups worldwide — Tsinghua, Stanford, MIT, Princeton, Alibaba, NVIDIA, and many others.</div>
+        </div>
+        <div class="about-card">
+          <div class="principle-icon">🔄</div>
+          <div class="principle-title">Regular Updates</div>
+          <div class="principle-desc">The directory is updated weekly. Star counts refresh periodically. Monthly ecosystem reports summarize major developments.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section style="margin: 48px 0;">
+      <div class="section-label" style="margin-bottom: 8px;">History</div>
+      <h2 style="font-family: var(--font-head); font-size: 1.5rem; font-weight: 700; margin-bottom: 4px;">How We Got Here</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">Late 2023</div>
+          <div class="timeline-title">OpenClaw reaches 100K stars</div>
+          <div class="timeline-desc">OpenClaw's rapid growth triggers an explosion of derivative projects — many science-focused teams begin adapting it for research workflows.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Early 2024</div>
+          <div class="timeline-title">ChemCrow launches</div>
+          <div class="timeline-desc">ur-whitelab's chemistry AI agent demonstrates that science-specific OpenClaw adaptations can reach production quality and attract serious attention.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Mid 2024</div>
+          <div class="timeline-title">Bioinformatics agent proliferation</div>
+          <div class="timeline-desc">AutoBA, ClawBio, CRISPR-GPT, and CellVoyager launch within months of each other. Researchers start asking: where do I find all of these in one place?</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Late 2024</div>
+          <div class="timeline-title">Claw4Science launches</div>
+          <div class="timeline-desc">We launched the directory with 40 initial projects and a commitment to weekly updates and editorial integrity. claw4science.org goes live.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2025</div>
+          <div class="timeline-title">Rapid ecosystem growth</div>
+          <div class="timeline-desc">EvoScientist, AgentLaboratory, STELLA, and Biomni launch. The directory grows to 95+ projects. Monthly ecosystem reports begin.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">April 2026</div>
+          <div class="timeline-title">Campus In China mirror launches</div>
+          <div class="timeline-desc">claw4science.campusinchina.com goes live — a mirror and research-community edition of the directory optimized for researchers in China.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What makes it into the directory -->
+    <section class="about-prose" style="max-width:100%; margin: 48px 0;">
+      <h2>What Gets Listed</h2>
+      <p>Projects must meet these criteria to be included in the main directory:</p>
+      <ul>
+        <li>Open source with public GitHub repository</li>
+        <li>Related to OpenClaw or scientific AI agent use cases</li>
+        <li>Demonstrates meaningful utility for researchers (not toy demos)</li>
+        <li>Has at least some documentation or README explaining usage</li>
+        <li>Is not an exact copy of another listed project without differentiation</li>
+      </ul>
+      <p>
+        Projects that don't meet the bar for the main directory may appear in our <strong style="color:var(--teal)">Watching List</strong> — we monitor them and promote to the main directory when they mature.
+      </p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" style="margin-top: 48px;">
+      <div class="contact-card">
+        <div style="font-size: 2rem; margin-bottom: 16px;">📬</div>
+        <h2 style="font-family:var(--font-head); font-size:1.4rem; font-weight:700; margin-bottom:10px;">Get In Touch</h2>
+        <p style="color:var(--text-secondary); max-width:440px; margin:0 auto 24px; font-size:0.9rem; line-height:1.7;">
+          To submit a project, open a GitHub issue. For editorial corrections, partnership inquiries, or other questions, reach out via GitHub.
+        </p>
+        <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+          <a class="btn btn-primary" href="https://github.com/bajwa82mna/claw4science-submissions/new/choose" target="_blank" rel="noopener noreferrer">
+            Submit a Project
+          </a>
+          <a class="btn btn-ghost" href="https://github.com/bajwa82mna" target="_blank" rel="noopener noreferrer">
+            GitHub Organization
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="nav-logo" href="index.html" style="margin-bottom:14px; display:inline-flex;">
+          <div class="logo-icon">🦀</div>
+          <span>Claw4<span class="accent">Science</span></span>
+        </a>
+        <p class="footer-desc">A curated directory of OpenClaw ecosystem projects for scientific research, bioinformatics, and AI-powered discovery.</p>
+      </div>
+      <div>
+        <h4 class="footer-heading">Explore</h4>
+        <ul class="footer-links">
+          <li><a href="index.html#projects">All Projects</a></li>
+          <li><a href="skill-hubs.html">Skill Hubs</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Resources</h4>
+        <ul class="footer-links">
+          <li><a href="https://github.com/openclaw/openclaw" target="_blank" rel="noopener noreferrer">OpenClaw GitHub</a></li>
+          <li><a href="https://clawhub.ai" target="_blank" rel="noopener noreferrer">ClawHub Skills</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Community</h4>
+        <ul class="footer-links">
+          <li><a href="https://github.com/bajwa82mna/claw4science-submissions/new/choose" target="_blank" rel="noopener noreferrer">Submit Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025–2026 Claw4Science. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+# GitHub Pages Configuration
+# Site: claw4science.campusinchina.com
+
+title: "Claw4Science"
+description: "A curated discovery platform for OpenClaw AI agent projects — bioinformatics, biomedicine, drug discovery, and multi-agent research."
+url: "https://claw4science.campusinchina.com"
+baseurl: ""
+
+# GitHub Pages settings
+plugins: []
+theme: null
+
+# Exclude files from build
+exclude:
+  - README.md
+  - .gitignore
+  - "*.sh"
+  - node_modules/

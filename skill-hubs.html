@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Claw4Science Skill Hubs — Curated AI agent skill collections for biology, omics, bioinformatics, and scientific research." />
+  <title>Skill Hubs — Claw4Science</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦀</text></svg>" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .skill-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      margin-top: 16px;
+    }
+    .skill-table th {
+      background: rgba(0, 229, 195, 0.06);
+      padding: 12px 16px;
+      text-align: left;
+      font-family: var(--font-head);
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      border-bottom: 1px solid var(--border);
+    }
+    .skill-table td {
+      padding: 13px 16px;
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      border-bottom: 1px solid rgba(0, 229, 195, 0.06);
+      vertical-align: middle;
+    }
+    .skill-table tr:last-child td { border-bottom: none; }
+    .skill-table tr:hover td { background: rgba(255,255,255,0.02); color: var(--text-primary); }
+    .skill-table td:first-child { font-weight: 600; color: var(--text-primary); }
+    .skill-table td:first-child .skill-icon { margin-right: 8px; }
+
+    .hub-section { margin-bottom: 64px; }
+    .hub-section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .hub-section-title {
+      font-family: var(--font-head);
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">
+      <div class="logo-icon">🦀</div>
+      <span>Claw4<span class="accent">Science</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="skill-hubs.html" class="active">Skill Hubs</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="btn btn-outline btn-sm" href="https://github.com/bajwa82mna/claw4science-submissions/new/choose" target="_blank" rel="noopener noreferrer">Submit Project</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="nav-mobile">
+  <a href="index.html#projects">Projects</a>
+  <a href="skill-hubs.html" class="active">Skill Hubs</a>
+  <a href="blog.html">Blog</a>
+  <a href="about.html">About</a>
+</div>
+
+<div class="page-hero">
+  <div class="section-label">Curated Collections</div>
+  <h1 class="page-hero-title">OpenClaw Skill Hubs</h1>
+  <p class="page-hero-desc">Explore curated AI agent skills from the OpenClaw and OmicsClaw ecosystems — covering biology, omics, bioinformatics, and scientific research workflows.</p>
+</div>
+
+<main class="section" style="padding-top: 0;">
+  <div class="container">
+
+    <!-- Overview cards -->
+    <div class="skill-hub-grid" style="margin-bottom: 64px;">
+
+      <div class="skill-hub-card">
+        <div class="skill-hub-icon">🧬</div>
+        <div class="skill-hub-name">OmicsClaw Skills</div>
+        <div class="skill-hub-desc">63+ skills for multi-omics data analysis — genomics, transcriptomics, proteomics, spatial omics, and single-cell analysis workflows.</div>
+        <div class="skill-hub-count">63 skills · From TianGz Lab</div>
+        <a class="btn btn-outline btn-sm" href="https://github.com/TianGzlab/OmicsClaw" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      </div>
+
+      <div class="skill-hub-card">
+        <div class="skill-hub-icon">🔬</div>
+        <div class="skill-hub-name">ClawBio Skills</div>
+        <div class="skill-hub-desc">Bioinformatics-native skill library. Local-first, reproducible. Covers genomics, population genetics, and equity-focused bioinformatics.</div>
+        <div class="skill-hub-count">40+ skills · Open Source</div>
+        <a class="btn btn-outline btn-sm" href="https://github.com/ClawBio/ClawBio" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      </div>
+
+      <div class="skill-hub-card">
+        <div class="skill-hub-icon">🏥</div>
+        <div class="skill-hub-name">MedgeClaw K-Dense</div>
+        <div class="skill-hub-desc">140K-Dense scientific skills for biomedicine. Real-time research dashboards, RStudio integration, JupyterLab support, and clinical data processing.</div>
+        <div class="skill-hub-count">140K-Dense · Claude Code</div>
+        <a class="btn btn-outline btn-sm" href="https://github.com/xjtulyc/MedgeClaw" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      </div>
+
+      <div class="skill-hub-card">
+        <div class="skill-hub-icon">📄</div>
+        <div class="skill-hub-name">ScienceClaw Skills</div>
+        <div class="skill-hub-desc">285 skills that grow at runtime — the agent writes new skills based on your usage patterns. 4-layer persistent memory, zero-hallucination citation protocol.</div>
+        <div class="skill-hub-count">285 skills · Self-evolving</div>
+        <a class="btn btn-outline btn-sm" href="https://github.com/beita6969/ScienceClaw" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      </div>
+
+      <div class="skill-hub-card">
+        <div class="skill-hub-icon">🎓</div>
+        <div class="skill-hub-name">DrClaw Research Skills</div>
+        <div class="skill-hub-desc">244 skills and 13 agent templates designed for academic researchers. Covers the full research lifecycle from idea to publication-ready manuscripts.</div>
+        <div class="skill-hub-count">244 skills · InternScience</div>
+        <a class="btn btn-outline btn-sm" href="https://github.com/InternScience/DrClaw" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      </div>
+
+      <div class="skill-hub-card">
+        <div class="skill-hub-icon">💊</div>
+        <div class="skill-hub-name">DrugClaw Skills</div>
+        <div class="skill-hub-desc">57 skills across 15 task categories — DTI, ADR, DDI, pharmacogenomics, drug repurposing. Powered by LangGraph for intelligent drug intelligence workflows.</div>
+        <div class="skill-hub-count">57 skills · LangGraph</div>
+        <a class="btn btn-outline btn-sm" href="https://github.com/QSong-github/DrugClaw" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      </div>
+
+    </div>
+
+    <!-- Skill Tables by Domain -->
+    <div class="hub-section">
+      <div class="hub-section-header">
+        <h2 class="hub-section-title">🧬 Bioinformatics &amp; Omics Skills</h2>
+        <span class="tag tag-blue">Selected from OmicsClaw &amp; ClawBio</span>
+      </div>
+      <table class="skill-table">
+        <thead>
+          <tr>
+            <th>Skill</th>
+            <th>Description</th>
+            <th>Source</th>
+            <th>Language</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="skill-icon">📊</span>RNA-seq Analysis</td>
+            <td>End-to-end bulk RNA-seq pipeline: QC, alignment, quantification, DEA</td>
+            <td><span class="tag">OmicsClaw</span></td>
+            <td><span class="tag tag-blue">Python/R</span></td>
+          </tr>
+          <tr>
+            <td><span class="skill-icon">🔬</span>scRNA-seq Clustering</td>
+            <td>Single-cell clustering, UMAP visualization, cell-type annotation</td>
+            <td><span class="tag">ClawBio</span></td>
+            <td><span class="tag tag-blue">Python</span></td>
+          </tr>
+          <tr>
+            <td><span class="skill-icon">🗺️</span>Spatial Transcriptomics</td>
+            <td>Spatial gene expression analysis with automated spot deconvolution</td>
+            <td><span class="tag">OmicsClaw</span></td>
+            <td><span class="tag tag-blue">Python/R</span></td>
+          </tr>
+          <tr>
+            <td><span class="skill-icon">🧬</span>WGS/WES Variant Calling</td>
+            <td>Germline and somatic variant calling, annotation, and filtering</td>
+            <td><span class="tag">OmicsClaw</span></td>
+            <td><span class="tag tag-blue">Python</span></td>
+          </tr>
+          <tr>
+            <td><span class="skill-icon">🔗</span>ChIP-seq Analysis</td>
+            <td>Peak calling, motif analysis, differential binding analysis</td>
+            <td><span class="tag">OmicsClaw</span></td>
+            <td><span class="tag tag-blue">Python/R</span></td>
+          </tr>
+          <tr>
+            <td><span class="skill-icon">🌐</span>Population Genetics</td>
+            <td>GWAS, PCA, admixture analysis, selection scans</td>
+            <td><span class="tag">ClawBio</span></td>
+            <td><span class="tag tag-blue">Python/R</span></td>
+          </tr>
+          <tr>
+            <td><span class="skill-icon">📡</span>Proteomics Analysis</td>
+            <td>Mass spectrometry data processing, protein quantification, PTM analysis</td>
+            <td><span class="tag">OmicsClaw</span></td>
+            <td><span class="tag tag-blue">Python</span></td>
+          </tr>
+          <tr>
+            <td><span class="skill-icon">🔄</span>Multi-omics Integration</td>
+            <td>Data integration across genomics, transcriptomics, and proteomics layers</td>
+            <td><span class="tag">OmicsClaw</span></td>
+            <td><span class="tag tag-blue">Python/R</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="hub-section">
+      <div class="hub-section-header">
+        <h2 class="hub-section-title">📄 Literature &amp; Paper Skills</h2>
+        <span class="tag tag-blue">From ScienceClaw &amp; Research-Claw</span>
+      </div>
+      <table class="skill-table">
+        <thead>
+          <tr>
+            <th>Skill</th>
+            <th>Description</th>
+            <th>Source</th>
+            <th>Type</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="skill-icon">📚</span>Literature Review</td>
+            <td>Automated PubMed/arXiv search, abstract screening, and synthesis</td>
+            <td><span class="tag">ScienceClaw</span></td>
+            <td><span class="tag tag-purple">Retrieval</span></td>
+          </tr>
+          <tr>
+            <td><span class="skill-icon">✍️</span>Paper Writing</td>
+            <td>LaTeX manuscript drafting with auto-citation and formatting</td>
+            <td><span class="tag">Research-Claw</span></td>
+            <td><span class="tag tag-purple">Generation</span></td>
+          </tr>
+          <tr>
+            <td><span class="skill-icon">📏</span>Citation Analysis</td>
+            <td>Track citation networks, impact metrics, and bibliometric insights</td>
+            <td><span class="tag">CitationClaw</span></td>
+            <td><span class="tag tag-purple">Analysis</span></td>
+          </tr>
+          <tr>
+            <td><span class="skill-icon">🎯</span>Hypothesis Generation</td>
+            <td>Novel hypothesis synthesis from literature gap analysis</td>
+            <td><span class="tag">ScienceClaw</span></td>
+            <td><span class="tag tag-purple">Reasoning</span></td>
+          </tr>
+          <tr>
+            <td><span class="skill-icon">🖼️</span>Figure Generation</td>
+            <td>Auto-generate publication-quality figures from data and results</td>
+            <td><span class="tag">ClawPhD</span></td>
+            <td><span class="tag tag-purple">Visualization</span></td>
+          </tr>
+          <tr>
+            <td><span class="skill-icon">💰</span>Grant Writing</td>
+            <td>Structured grant proposal drafting with aims and significance sections</td>
+            <td><span class="tag">PaperClaw</span></td>
+            <td><span class="tag tag-purple">Generation</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="hub-section">
+      <div class="hub-section-header">
+        <h2 class="hub-section-title">💊 Drug Discovery Skills</h2>
+        <span class="tag tag-blue">From DrugClaw</span>
+      </div>
+      <table class="skill-table">
+        <thead>
+          <tr>
+            <th>Skill</th>
+            <th>Description</th>
+            <th>Category</th>
+            <th>Type</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="skill-icon">🎯</span>DTI Prediction</td>
+            <td>Drug-target interaction prediction using ML models</td>
+            <td><span class="tag">Drug-Target</span></td>
+            <td><span class="tag tag-purple">ML</span></td>
+          </tr>
+          <tr>
+            <td><span class="skill-icon">⚠️</span>ADR Analysis</td>
+            <td>Adverse drug reaction prediction and safety profiling</td>
+            <td><span class="tag">Safety</span></td>
+            <td><span class="tag tag-purple">ML</span></td>
+          </tr>
+          <tr>
+            <td><span class="skill-icon">🔀</span>DDI Screening</td>
+            <td>Drug-drug interaction prediction and mechanism analysis</td>
+            <td><span class="tag">Safety</span></td>
+            <td><span class="tag tag-purple">ML</span></td>
+          </tr>
+          <tr>
+            <td><span class="skill-icon">🧬</span>Pharmacogenomics</td>
+            <td>Genotype-drug response prediction and personalized dosing</td>
+            <td><span class="tag">PGx</span></td>
+            <td><span class="tag tag-purple">Analysis</span></td>
+          </tr>
+          <tr>
+            <td><span class="skill-icon">♻️</span>Drug Repurposing</td>
+            <td>Identify new indications for approved drugs via network analysis</td>
+            <td><span class="tag">Discovery</span></td>
+            <td><span class="tag tag-purple">Graph</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- CTA -->
+    <div style="text-align:center; padding: 40px; background: var(--bg-card); border: 1px solid var(--border-hover); border-radius: var(--radius-xl);">
+      <div class="section-label" style="justify-content:center;">Contribute</div>
+      <h2 style="font-family:var(--font-head); font-size:1.5rem; font-weight:700; margin-bottom:12px;">
+        Have a skill collection to share?
+      </h2>
+      <p style="color:var(--text-secondary); max-width:480px; margin:0 auto 24px; font-size:0.95rem; line-height:1.7;">
+        Submit your skill library to be featured in the Claw4Science directory. We welcome contributions from research labs, developers, and the open-source community.
+      </p>
+      <a class="btn btn-primary" href="https://github.com/bajwa82mna/claw4science-submissions/new/choose" target="_blank" rel="noopener noreferrer">
+        Submit Skill Hub
+      </a>
+    </div>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="nav-logo" href="index.html" style="margin-bottom:14px; display:inline-flex;">
+          <div class="logo-icon">🦀</div>
+          <span>Claw4<span class="accent">Science</span></span>
+        </a>
+        <p class="footer-desc">A curated directory of OpenClaw ecosystem projects for scientific research, bioinformatics, and AI-powered discovery.</p>
+      </div>
+      <div>
+        <h4 class="footer-heading">Explore</h4>
+        <ul class="footer-links">
+          <li><a href="index.html#projects">All Projects</a></li>
+          <li><a href="skill-hubs.html">Skill Hubs</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Resources</h4>
+        <ul class="footer-links">
+          <li><a href="https://github.com/openclaw/openclaw" target="_blank" rel="noopener noreferrer">OpenClaw GitHub</a></li>
+          <li><a href="https://clawhub.ai" target="_blank" rel="noopener noreferrer">ClawHub Skills</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Community</h4>
+        <ul class="footer-links">
+          <li><a href="https://github.com/bajwa82mna/claw4science-submissions/new/choose" target="_blank" rel="noopener noreferrer">Submit Project</a></li>
+          <li><a href="about.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025–2026 Claw4Science. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

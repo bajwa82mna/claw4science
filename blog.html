@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Claw4Science Blog — Guides, deep-dives, and monthly reports on the OpenClaw AI agent ecosystem for scientific research." />
+  <title>Blog — Claw4Science</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦀</text></svg>" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .blog-hero-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-hover);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      margin-bottom: 48px;
+      transition: all var(--transition);
+    }
+    .blog-hero-card:hover {
+      box-shadow: var(--shadow-glow);
+      transform: translateY(-2px);
+    }
+    .blog-hero-img {
+      background: linear-gradient(135deg, var(--teal-dim), var(--blue-dim));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 5rem;
+      min-height: 280px;
+    }
+    .blog-hero-body {
+      padding: 36px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 14px;
+    }
+    .blog-hero-title { font-size: 1.5rem; }
+    .blog-hero-excerpt { color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem; }
+
+    .blog-category-label {
+      font-family: var(--font-head);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 12px;
+      margin: 40px 0 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    @media (max-width: 700px) {
+      .blog-hero-card { grid-template-columns: 1fr; }
+      .blog-hero-img { min-height: 160px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">
+      <div class="logo-icon">🦀</div>
+      <span>Claw4<span class="accent">Science</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="skill-hubs.html">Skill Hubs</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="btn btn-outline btn-sm" href="https://github.com/bajwa82mna/claw4science-submissions/new/choose" target="_blank" rel="noopener noreferrer">Submit Project</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="nav-mobile">
+  <a href="index.html#projects">Projects</a>
+  <a href="skill-hubs.html">Skill Hubs</a>
+  <a href="blog.html" class="active">Blog</a>
+  <a href="about.html">About</a>
+  <a href="https://github.com/bajwa82mna/claw4science-submissions/new/choose" target="_blank" rel="noopener noreferrer">Submit Project</a>
+</div>
+
+<!-- Page Hero -->
+<div class="page-hero">
+  <div class="section-label">Knowledge &amp; Guides</div>
+  <h1 class="page-hero-title">Claw4Science Blog</h1>
+  <p class="page-hero-desc">In-depth guides, ecosystem reports, and deep-dives on AI agents for scientific research.</p>
+</div>
+
+<main class="section" style="padding-top: 0;">
+  <div class="container">
+
+    <!-- Featured Post -->
+    <a href="#" class="blog-hero-card" style="text-decoration:none; color:inherit;">
+      <div class="blog-hero-img">📊</div>
+      <div class="blog-hero-body">
+        <div style="display:flex; gap:8px; flex-wrap:wrap;">
+          <span class="badge-new">🔥 Latest</span>
+          <span class="tag">Monthly Report</span>
+          <span style="font-size:0.8rem; color:var(--text-muted);">April 2026</span>
+        </div>
+        <h2 class="blog-hero-title">April 2026 Ecosystem Report</h2>
+        <p class="blog-hero-excerpt">
+          This month's standouts: autoresearch by Andrej Karpathy breaks 60K stars; OpenResearcher surpasses GPT-4.1 on BrowseComp-Plus; Biomni from Stanford SNAP Lab launches as a general-purpose biomedical agent. Plus 12 new projects added to the directory.
+        </p>
+        <span class="blog-card-link" style="margin-top: 8px;">Read full report →</span>
+      </div>
+    </a>
+
+    <!-- Ecosystem Guides -->
+    <div class="blog-category-label">🗺️ Ecosystem Guides</div>
+    <div class="blog-grid">
+
+      <a class="blog-card" href="#" style="text-decoration:none; color:inherit;">
+        <div class="blog-card-img">🦀</div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span class="tag">Ecosystem</span>
+            <span>March 2026</span>
+          </div>
+          <h3 class="blog-card-title">OpenClaw Ecosystem Guide</h3>
+          <p class="blog-card-excerpt">A complete overview of 19+ projects, skill libraries, and tools for scientific research in the OpenClaw ecosystem — from core platforms to specialized domain agents.</p>
+          <span class="blog-card-link">Read guide →</span>
+        </div>
+      </a>
+
+      <a class="blog-card" href="#" style="text-decoration:none; color:inherit;">
+        <div class="blog-card-img">🕸️</div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span class="tag">Visualization</span>
+            <span>February 2026</span>
+          </div>
+          <h3 class="blog-card-title">Ecosystem Lineage Map</h3>
+          <p class="blog-card-excerpt">Interactive visualization of 63 projects and their inheritance relationships — from OpenClaw core to independent ecosystem branches, showing how the family tree has grown.</p>
+          <span class="blog-card-link">Explore map →</span>
+        </div>
+      </a>
+
+      <a class="blog-card" href="#" style="text-decoration:none; color:inherit;">
+        <div class="blog-card-img">⚡</div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span class="tag">Comparison</span>
+            <span>January 2026</span>
+          </div>
+          <h3 class="blog-card-title">Lightweight Variants Compared</h3>
+          <p class="blog-card-excerpt">NanoBot vs ZeroClaw vs PicoClaw vs NanoClaw — which ultra-lightweight agent fits your research workflow? A side-by-side breakdown of performance, setup, and use cases.</p>
+          <span class="blog-card-link">Read comparison →</span>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- Bioinformatics -->
+    <div class="blog-category-label">🧬 Bioinformatics &amp; Omics</div>
+    <div class="blog-grid">
+
+      <a class="blog-card" href="#" style="text-decoration:none; color:inherit;">
+        <div class="blog-card-img">🧬</div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span class="tag">Omics</span>
+            <span>March 2026</span>
+          </div>
+          <h3 class="blog-card-title">OmicsClaw for Multi-Omics Analysis</h3>
+          <p class="blog-card-excerpt">AI agent tools for genomics, proteomics, transcriptomics, and multi-omics data analysis with 63+ skills covering everything from raw FASTQ to integrated pathway analysis.</p>
+          <span class="blog-card-link">Read guide →</span>
+        </div>
+      </a>
+
+      <a class="blog-card" href="#" style="text-decoration:none; color:inherit;">
+        <div class="blog-card-img">🔬</div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span class="tag">scRNA-seq</span>
+            <span>February 2026</span>
+          </div>
+          <h3 class="blog-card-title">scRNA-seq Skills Guide</h3>
+          <p class="blog-card-excerpt">The best single-cell RNA-seq skills for AI agents across K-Dense, ClawBio, and the OpenClaw ecosystem — from QC and clustering to trajectory and differential expression.</p>
+          <span class="blog-card-link">Read guide →</span>
+        </div>
+      </a>
+
+      <a class="blog-card" href="#" style="text-decoration:none; color:inherit;">
+        <div class="blog-card-img">🧫</div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span class="tag">Biology</span>
+            <span>January 2026</span>
+          </div>
+          <h3 class="blog-card-title">OpenClaw for Biology Research</h3>
+          <p class="blog-card-excerpt">How biologists use OpenClaw AI agent skills — BioClaw, ClawBio, MedgeClaw, and more for life sciences research workflows from bench to publication.</p>
+          <span class="blog-card-link">Read guide →</span>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- Drug Discovery -->
+    <div class="blog-category-label">💊 Drug Discovery</div>
+    <div class="blog-grid">
+
+      <a class="blog-card" href="#" style="text-decoration:none; color:inherit;">
+        <div class="blog-card-img">💊</div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span class="tag">Drug Discovery</span>
+            <span>February 2026</span>
+          </div>
+          <h3 class="blog-card-title">AI Drug Discovery Tools 2026</h3>
+          <p class="blog-card-excerpt">How AI agents accelerate drug discovery — from target identification to lead optimization. Covers DrugClaw, MolClaw, OriGene, Virtual Lab, ChemCrow, and more.</p>
+          <span class="blog-card-link">Read guide →</span>
+        </div>
+      </a>
+
+      <a class="blog-card" href="#" style="text-decoration:none; color:inherit;">
+        <div class="blog-card-img">⚗️</div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span class="tag">Chemistry</span>
+            <span>January 2026</span>
+          </div>
+          <h3 class="blog-card-title">ChemCrow: The Chemistry Pioneer</h3>
+          <p class="blog-card-excerpt">The 2023 project that started the science agent movement. A deep dive into ChemCrow's LangChain-based architecture and how it influenced MDCrow, ChemGraph, and the broader chemistry AI ecosystem.</p>
+          <span class="blog-card-link">Read guide →</span>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- Monthly Reports -->
+    <div class="blog-category-label">📊 Monthly Reports</div>
+    <div class="blog-grid">
+      <a class="blog-card" href="#" style="text-decoration:none; color:inherit;">
+        <div class="blog-card-img" style="font-size:1.4rem; background: var(--teal-dim);">April 2026</div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta"><span class="tag">Monthly</span><span>April 2026</span></div>
+          <h3 class="blog-card-title">April 2026 Ecosystem Report</h3>
+          <p class="blog-card-excerpt">autoresearch at 60K+, OpenResearcher beats GPT-4.1, Biomni launches. 12 new projects this month.</p>
+          <span class="blog-card-link">Read report →</span>
+        </div>
+      </a>
+      <a class="blog-card" href="#" style="text-decoration:none; color:inherit;">
+        <div class="blog-card-img" style="font-size:1.4rem; background: var(--blue-dim);">March 2026</div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta"><span class="tag">Monthly</span><span>March 2026</span></div>
+          <h3 class="blog-card-title">March 2026 Ecosystem Report</h3>
+          <p class="blog-card-excerpt">EvoScientist wins ICAIS Best Paper, RD-Agent crosses 11K stars, PantheonOS launch from dynamo team.</p>
+          <span class="blog-card-link">Read report →</span>
+        </div>
+      </a>
+      <a class="blog-card" href="#" style="text-decoration:none; color:inherit;">
+        <div class="blog-card-img" style="font-size:1.4rem; background: rgba(139,92,246,0.1);">Feb 2026</div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta"><span class="tag">Monthly</span><span>February 2026</span></div>
+          <h3 class="blog-card-title">February 2026 Ecosystem Report</h3>
+          <p class="blog-card-excerpt">CellVoyager in Nature Methods, STELLA from Princeton/Stanford/UCLA, AgentLaboratory adds AgentRxiv.</p>
+          <span class="blog-card-link">Read report →</span>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="nav-logo" href="index.html" style="margin-bottom:14px; display:inline-flex;">
+          <div class="logo-icon">🦀</div>
+          <span>Claw4<span class="accent">Science</span></span>
+        </a>
+        <p class="footer-desc">A curated directory of OpenClaw ecosystem projects for scientific research, bioinformatics, and AI-powered discovery.</p>
+      </div>
+      <div>
+        <h4 class="footer-heading">Explore</h4>
+        <ul class="footer-links">
+          <li><a href="index.html#projects">All Projects</a></li>
+          <li><a href="skill-hubs.html">Skill Hubs</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Resources</h4>
+        <ul class="footer-links">
+          <li><a href="https://github.com/openclaw/openclaw" target="_blank" rel="noopener noreferrer">OpenClaw GitHub</a></li>
+          <li><a href="https://clawhub.ai" target="_blank" rel="noopener noreferrer">ClawHub Skills</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Community</h4>
+        <ul class="footer-links">
+          <li><a href="https://github.com/bajwa82mna/claw4science-submissions/new/choose" target="_blank" rel="noopener noreferrer">Submit Project</a></li>
+          <li><a href="about.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025–2026 Claw4Science. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

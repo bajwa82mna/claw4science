@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Claw4Science — A curated discovery platform for OpenClaw AI agent projects spanning bioinformatics, biomedicine, drug discovery, and multi-agent research systems." />
+  <meta name="keywords" content="OpenClaw, AI agents, bioinformatics, biomedicine, drug discovery, scientific research, CRISPR, RNA-seq, omics" />
+  <meta property="og:title" content="Claw4Science — OpenClaw Ecosystem for Scientific Research" />
+  <meta property="og:description" content="Curated AI agent projects for bioinformatics, biomedicine, drug discovery, and scientific automation." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://claw4science.campusinchina.com" />
+  <title>Claw4Science — OpenClaw Ecosystem for Scientific Research</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦀</text></svg>" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ── Navigation ── -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html" aria-label="Claw4Science Home">
+      <div class="logo-icon">🦀</div>
+      <span>Claw4<span class="accent">Science</span></span>
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="skill-hubs.html">Skill Hubs</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+
+    <div class="nav-cta">
+      <a class="btn btn-outline btn-sm" href="https://github.com/bajwa82mna/claw4science-submissions/new/choose" target="_blank" rel="noopener noreferrer">
+        Submit Project
+      </a>
+    </div>
+
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="nav-mobile" role="navigation" aria-label="Mobile navigation">
+  <a href="index.html#projects">Projects</a>
+  <a href="skill-hubs.html">Skill Hubs</a>
+  <a href="blog.html">Blog</a>
+  <a href="about.html">About</a>
+  <a href="https://github.com/bajwa82mna/claw4science-submissions/new/choose" target="_blank" rel="noopener noreferrer">Submit Project</a>
+</div>
+
+<!-- ── HERO ── -->
+<section class="hero" aria-label="Hero">
+  <div class="hero-particles" aria-hidden="true"></div>
+
+  <div class="hero-badge" aria-label="Platform description">
+    <span>🧬</span> OpenClaw Ecosystem for Scientific Research
+  </div>
+
+  <h1 class="hero-title">
+    AI Agents Powering<br>
+    <span class="gradient-text">Scientific Discovery</span>
+  </h1>
+
+  <p class="hero-desc">
+    A curated dataset and discovery platform for OpenClaw AI agent projects — spanning
+    bioinformatics, biomedicine, drug discovery, and multi-agent research systems.
+    From lightweight assistants to self-evolving research engines.
+  </p>
+
+  <div class="hero-actions">
+    <a class="btn btn-primary" href="#projects">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      Explore Projects
+    </a>
+    <a class="btn btn-outline" href="skill-hubs.html">Skill Hubs</a>
+    <a class="btn btn-ghost" href="blog.html">Blog &amp; Guides</a>
+  </div>
+
+  <div class="hero-stats" aria-label="Platform statistics">
+    <div class="stat-item">
+      <div class="stat-number">95+</div>
+      <div class="stat-label">Projects Tracked</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">107+</div>
+      <div class="stat-label">Skills Catalogued</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">9</div>
+      <div class="stat-label">Categories</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">∞</div>
+      <div class="stat-label">Possibilities</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROJECTS SECTION ── -->
+<section class="section" id="projects" aria-label="Project Directory">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label" aria-hidden="true">Curated Directory</div>
+      <h2 class="section-title">OpenClaw Ecosystem Projects</h2>
+      <p class="section-desc">
+        From full-featured core platforms to ultra-lightweight edge agents, from self-evolving
+        research systems to multi-omics pipelines.
+      </p>
+    </div>
+
+    <!-- Search & Filter Bar -->
+    <div class="search-bar" role="search">
+      <div class="search-input-wrap">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input
+          id="search-input"
+          class="search-input"
+          type="search"
+          placeholder="Search projects, tags, descriptions..."
+          aria-label="Search projects"
+          autocomplete="off"
+        />
+      </div>
+
+      <div class="filter-tabs" role="tablist" aria-label="Filter by category">
+        <button class="filter-tab active" data-category="all" role="tab" aria-selected="true">
+          All <span class="count">0</span>
+        </button>
+        <button class="filter-tab" data-category="core" role="tab" aria-selected="false">
+          Core Platform <span class="count">0</span>
+        </button>
+        <button class="filter-tab" data-category="team" role="tab" aria-selected="false">
+          Team &amp; Orchestration <span class="count">0</span>
+        </button>
+        <button class="filter-tab" data-category="medical" role="tab" aria-selected="false">
+          Medical &amp; Clinical <span class="count">0</span>
+        </button>
+        <button class="filter-tab" data-category="bioinformatics" role="tab" aria-selected="false">
+          Bioinformatics &amp; Omics <span class="count">0</span>
+        </button>
+        <button class="filter-tab" data-category="drug" role="tab" aria-selected="false">
+          Drug Discovery <span class="count">0</span>
+        </button>
+        <button class="filter-tab" data-category="research" role="tab" aria-selected="false">
+          Autonomous Research <span class="count">0</span>
+        </button>
+        <button class="filter-tab" data-category="workbench" role="tab" aria-selected="false">
+          Personal Workbench <span class="count">0</span>
+        </button>
+        <button class="filter-tab" data-category="papers" role="tab" aria-selected="false">
+          Paper &amp; Literature <span class="count">0</span>
+        </button>
+        <button class="filter-tab" data-category="education" role="tab" aria-selected="false">
+          Education <span class="count">0</span>
+        </button>
+        <button class="filter-tab" data-category="benchmark" role="tab" aria-selected="false">
+          Benchmarks <span class="count">0</span>
+        </button>
+      </div>
+
+      <div class="flex-between" style="font-size:0.8rem; color:var(--text-muted);">
+        <span>Showing <strong id="result-count" style="color:var(--teal)">—</strong></span>
+        <span class="font-mono" style="font-size:0.72rem;">Updated April 2026</span>
+      </div>
+    </div>
+
+    <!-- Project Grid -->
+    <div id="projects-grid" class="projects-grid" role="list" aria-label="Project cards"></div>
+    <div id="no-results" class="no-results" aria-live="polite">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M8 11h6M11 8v6"/></svg>
+      <p style="margin-top:12px; font-size:0.95rem;">No projects found. Try adjusting your search.</p>
+    </div>
+
+    <!-- Watching List -->
+    <div style="margin-top: 56px;">
+      <div class="category-heading">
+        <h3>👁️ Watching List <span class="category-count">— Early-stage projects we're tracking</span></h3>
+      </div>
+      <div id="watching-grid" class="watching-grid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── STATS ── -->
+<section class="section-sm" aria-label="Platform statistics">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-number">95+</div>
+        <div class="stat-label">Projects Tracked</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">107+</div>
+        <div class="stat-label">Skills Catalogued</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">9</div>
+        <div class="stat-label">Project Categories</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">28</div>
+        <div class="stat-label">Projects Watching</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── BLOG / RESOURCES ── -->
+<section class="section" id="ecosystem" aria-label="Resources and guides">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label" aria-hidden="true">Guides &amp; Resources</div>
+      <h2 class="section-title">Explore the Ecosystem</h2>
+      <p class="section-desc">Deep-dives into the OpenClaw and OmicsClaw ecosystems — curated guides for researchers.</p>
+    </div>
+
+    <div class="blog-grid">
+      <a class="blog-card" href="blog.html" style="text-decoration:none; color:inherit;">
+        <div class="blog-card-img">🗺️</div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span class="tag">Ecosystem</span>
+            <span>April 2026</span>
+          </div>
+          <h3 class="blog-card-title">OpenClaw Ecosystem Guide</h3>
+          <p class="blog-card-excerpt">A complete overview of 19+ projects, skill libraries, and tools for scientific research in the OpenClaw ecosystem.</p>
+          <span class="blog-card-link">Read guide →</span>
+        </div>
+      </a>
+
+      <a class="blog-card" href="blog.html" style="text-decoration:none; color:inherit;">
+        <div class="blog-card-img">🧬</div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span class="tag">Omics</span>
+            <span>March 2026</span>
+          </div>
+          <h3 class="blog-card-title">OmicsClaw for Multi-Omics Analysis</h3>
+          <p class="blog-card-excerpt">AI agent tools for genomics, proteomics, transcriptomics, and multi-omics data analysis with 63+ skills.</p>
+          <span class="blog-card-link">Read guide →</span>
+        </div>
+      </a>
+
+      <a class="blog-card" href="blog.html" style="text-decoration:none; color:inherit;">
+        <div class="blog-card-img">🔬</div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span class="tag">Biology</span>
+            <span>March 2026</span>
+          </div>
+          <h3 class="blog-card-title">OpenClaw for Biology Research</h3>
+          <p class="blog-card-excerpt">How biologists use OpenClaw AI agent skills — BioClaw, ClawBio, MedgeClaw, and more for life sciences research.</p>
+          <span class="blog-card-link">Read guide →</span>
+        </div>
+      </a>
+
+      <a class="blog-card" href="blog.html" style="text-decoration:none; color:inherit;">
+        <div class="blog-card-img">🧫</div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span class="tag">scRNA-seq</span>
+            <span>February 2026</span>
+          </div>
+          <h3 class="blog-card-title">scRNA-seq Skills Guide</h3>
+          <p class="blog-card-excerpt">The best single-cell RNA-seq skills for AI agents across K-Dense, ClawBio, and the OpenClaw ecosystem.</p>
+          <span class="blog-card-link">Read guide →</span>
+        </div>
+      </a>
+
+      <a class="blog-card" href="blog.html" style="text-decoration:none; color:inherit;">
+        <div class="blog-card-img">💊</div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span class="tag">Drug Discovery</span>
+            <span>February 2026</span>
+          </div>
+          <h3 class="blog-card-title">AI Drug Discovery Tools 2026</h3>
+          <p class="blog-card-excerpt">How AI agents accelerate drug discovery — from target identification to lead optimization with DrugClaw, MolClaw, and more.</p>
+          <span class="blog-card-link">Read guide →</span>
+        </div>
+      </a>
+
+      <a class="blog-card" href="blog.html" style="text-decoration:none; color:inherit;">
+        <div class="blog-card-img">🕸️</div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span class="tag">Visualization</span>
+            <span>January 2026</span>
+          </div>
+          <h3 class="blog-card-title">Ecosystem Lineage Map</h3>
+          <p class="blog-card-excerpt">Interactive visualization of 63 projects and their inheritance relationships — from OpenClaw core to independent ecosystem.</p>
+          <span class="blog-card-link">Read guide →</span>
+        </div>
+      </a>
+    </div>
+
+    <div style="text-align:center; margin-top:32px;">
+      <a class="btn btn-outline" href="blog.html">View All Blog Posts →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ── -->
+<section class="section" aria-label="Frequently asked questions">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label" aria-hidden="true">FAQ</div>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-desc">Common questions about the OpenClaw science ecosystem.</p>
+    </div>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What is the OpenClaw ecosystem?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            OpenClaw is a widely-adopted open-source AI assistant platform that connects 20+ messaging apps and supports voice interaction. The "OpenClaw ecosystem" refers to the growing family of projects built on or inspired by OpenClaw — ranging from lightweight variants (NanoBot, ZeroClaw) to specialized scientific tools (ClawBio, OmicsClaw) and autonomous research agents (EvoScientist, AgentLaboratory). Claw4Science curates and tracks these projects for the scientific research community.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How can researchers benefit from these projects?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            Researchers can automate repetitive tasks like literature review, data preprocessing, and report generation. Projects like AutoBA handle multi-omics analyses (RNA-seq, scRNA-seq, spatial transcriptomics) with automated code repair. End-to-end systems like AgentLaboratory and ARIS can run experiments autonomously overnight. Domain-specific tools like CRISPR-GPT assist with guide RNA design, while CitationClaw helps track paper impact.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Do I need coding experience to use these tools?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            It depends on the tool. NanoBot (pip install nanobot-ai) and several others are designed for minimal setup. ClawX provides a graphical desktop interface. OpenMAIC requires no coding at all. Most research-oriented tools (AutoBA, CRISPR-GPT) do expect familiarity with command-line environments and Python, though they heavily automate the actual analysis code.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Are these projects open source?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            Yes — all projects listed on Claw4Science are open source and available on GitHub. Licenses vary by project (MIT, Apache 2.0, GPL, etc.) so check each repository's license file. The OpenClaw core platform itself is MIT licensed. Some projects may have commercial offerings or restricted API access while keeping the core open source.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What does the 🔥 New badge mean?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            The 🔥 New badge indicates projects that have recently launched, recently crossed a significant star milestone, or have had a major version release. It highlights projects that are currently seeing rapid community adoption and are worth paying close attention to.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Can I contribute or submit a new project?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            Absolutely! Open a GitHub issue using our submission template. Projects should be open source, actively maintained, and related to the OpenClaw ecosystem or scientific AI agent use cases. We review submissions weekly and add approved projects to the appropriate category. Please include the GitHub URL, a brief description, primary language, and any relevant tags.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Why does the star count differ from GitHub?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            Star counts are cached and updated periodically — typically every few days. GitHub numbers update in real-time, so you may see a small lag. The numbers here are approximate and used for relative ranking, not precise reporting. For exact current counts, click through to the GitHub repository.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="nav-logo" href="index.html" style="margin-bottom:14px; display:inline-flex;">
+          <div class="logo-icon">🦀</div>
+          <span>Claw4<span class="accent">Science</span></span>
+        </a>
+        <p class="footer-desc">
+          A curated directory of OpenClaw ecosystem projects for scientific research,
+          bioinformatics, and AI-powered discovery. Maintained by the research community.
+        </p>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <a class="btn btn-ghost btn-sm" href="https://github.com/bajwa82mna/claw4science-submissions/new/choose" target="_blank" rel="noopener noreferrer">Submit Project</a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Explore</h4>
+        <ul class="footer-links">
+          <li><a href="index.html#projects">All Projects</a></li>
+          <li><a href="index.html#ecosystem">Ecosystem Map</a></li>
+          <li><a href="skill-hubs.html">Skill Hubs</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Resources</h4>
+        <ul class="footer-links">
+          <li><a href="https://github.com/openclaw/openclaw" target="_blank" rel="noopener noreferrer">OpenClaw GitHub</a></li>
+          <li><a href="https://clawhub.ai" target="_blank" rel="noopener noreferrer">ClawHub Skills</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="https://claw4science.org/developers" target="_blank" rel="noopener noreferrer">API Docs</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Community</h4>
+        <ul class="footer-links">
+          <li><a href="https://github.com/bajwa82mna/claw4science-submissions/new/choose" target="_blank" rel="noopener noreferrer">Submit a Project</a></li>
+          <li><a href="https://github.com/openclaw/openclaw" target="_blank" rel="noopener noreferrer">OpenClaw Repo</a></li>
+          <li><a href="about.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">
+        © 2025–2026 Claw4Science at
+        <a href="https://claw4science.campusinchina.com" style="color:var(--teal)">claw4science.campusinchina.com</a>.
+        All rights reserved.
+      </p>
+      <div class="footer-legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/projects.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
