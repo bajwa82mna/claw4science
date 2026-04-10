@@ -1302,23 +1302,29 @@ h4 { font-size: 1rem; font-weight: 600; }
 .lang-zig { background: #ec915c; }
 
 /* ── RESPONSIVE ── */
-@media (max-width: 900px) {
+
+/* Mid desktops (900–1100px): footer 2-column before it gets too tight */
+@media (max-width: 1100px) {
   .footer-grid {
     grid-template-columns: 1fr 1fr;
+    gap: 36px;
   }
 }
 
-@media (max-width: 768px) {
+/* Tablets & small desktops (≤900px) */
+@media (max-width: 900px) {
+  /* Collapse nav to hamburger */
   .nav-links, .nav-cta { display: none; }
   .nav-toggle { display: flex; }
 
-  .hero { padding: 100px 20px 60px; }
+  .section { padding: 64px 0; }
 
+  .hero { padding: 100px 20px 60px; }
   .hero-stats { gap: 24px; }
 
   .footer-grid {
     grid-template-columns: 1fr;
-    gap: 32px;
+    gap: 28px;
   }
 
   .footer-bottom {
@@ -1333,13 +1339,55 @@ h4 { font-size: 1rem; font-weight: 600; }
   .stats-grid {
     grid-template-columns: 1fr 1fr;
   }
+
+  .blog-grid {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
+
+  /* Filter tabs: horizontal scroll instead of wrapping to multiple rows */
+  .filter-tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none; /* Firefox */
+    padding-bottom: 4px;
+    margin-bottom: -4px;
+  }
+  .filter-tabs::-webkit-scrollbar { display: none; } /* Chrome, Safari */
+  .filter-tab { flex-shrink: 0; }
 }
 
+/* Small mobile (≤480px) */
 @media (max-width: 480px) {
-  .section { padding: 56px 0; }
-  .hero-actions { flex-direction: column; align-items: center; }
-  .stats-grid { grid-template-columns: 1fr; }
+  .section { padding: 48px 0; }
+
+  /* Tighter container padding on small screens */
+  .container { padding: 0 16px; }
+
+  /* Stack hero buttons full-width */
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    max-width: 320px;
+  }
+  .hero-actions .btn { justify-content: center; }
+
+  /* Hero stats: 2×2 grid instead of overflowing row */
+  .hero-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 32px;
+    max-width: 300px;
+    width: 100%;
+  }
+
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+
   .search-bar { padding: 16px; }
+
+  /* Tighter FAQ on small screens */
+  .faq-question { font-size: 0.875rem; padding: 14px 16px; }
+  .faq-answer-inner { padding: 0 16px 14px; }
 }
 
 /* ── UTILITY ── */
