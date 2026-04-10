@@ -1332,10 +1332,6 @@ h4 { font-size: 1rem; font-weight: 600; }
     align-items: flex-start;
   }
 
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-
   .stats-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -1380,6 +1376,8 @@ h4 { font-size: 1rem; font-weight: 600; }
     max-width: 300px;
     width: 100%;
   }
+
+  .projects-grid { grid-template-columns: 1fr; }
 
   .stats-grid { grid-template-columns: 1fr 1fr; }
 

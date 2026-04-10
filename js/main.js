@@ -24,11 +24,11 @@
   );
 
   // active link
-  const path = location.pathname.replace(/\/$/, '') || '/';
+  const path = (location.pathname.split('/').pop() || 'index.html').replace(/\/$/, '');
   document.querySelectorAll('.nav-links a, .nav-mobile a').forEach(a => {
     const href = a.getAttribute('href') || '';
-    const normHref = href.replace(/\/$/, '') || '/';
-    if (normHref === path || (path === '/' && normHref === 'index.html'))
+    const normHref = href.split('#')[0].replace(/\/$/, '') || 'index.html';
+    if (normHref === path || (path === 'index.html' && normHref === 'index.html'))
       a.classList.add('active');
     if (path.includes('blog') && href.includes('blog'))
       a.classList.add('active');
